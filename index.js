@@ -22,7 +22,7 @@ const userRoutes = require('./routes/user.routes');
 const taskRoutes = require('./routes/task.routes');
 const app = express();
 app.use(cors({
-        origin: "https://66a7f46a55a8ef6ffd029314--chipper-torte-8a0d77.netlify.app",
+        origin: "https://chipper-torte-8a0d77.netlify.app",
         methods: "GET, POST, PUT, DELETE",
         credentials: true
 })); 
