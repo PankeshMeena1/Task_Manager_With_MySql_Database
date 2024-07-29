@@ -9,10 +9,9 @@ const taskRoutes = require('./routes/task.routes');
 require('dotenv').config();
 
 app.use(cors({
-        origin: "https://chipper-torte-8a0d77.netlify.app",
-        methods: "GET, POST, PUT, DELETE",
-        credentials: true
-})); 
+  origin: 'https://your-frontend-domain.com', // Allow requests from your frontend domain
+}));
+app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
